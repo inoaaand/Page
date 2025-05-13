@@ -593,10 +593,13 @@ strong {
 }
 
 .artists-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
   border-radius: var(--border-radius-medium);
   display: block;
-  width: 100%;
 }
+
 
 .artists-thumb:hover .artists-hover {
   transform: translateY(0);
@@ -638,6 +641,13 @@ strong {
 .artists-hover hr {
   margin: 1.5rem 0;
 }
+.artists-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+
 
 
 /*---------------------------------------
